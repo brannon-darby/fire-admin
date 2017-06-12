@@ -1,0 +1,35 @@
+{
+  "name": "fire-admin",
+  "version": "0.0.0",
+  "description": "Admin module for the FireLoop.io platform",
+  "main": "index.js",
+  "scripts": {
+    "clean": "concurrently -p \"/{name}/\" -s \"last\" -n \"root,fire\" -c \"black.bgWhite,white.bgRed\" \"rimraf node_modules\" \"lerna clean --yes\"",
+    "dev": "lerna run dev --stream",
+    "install-apps": "concurrently -p \"/{name}/\" -n \"api,webapp\" -c \"white.bgGreen,white.bgBlue\" \"cd apps/api-server && npm install\" \"cd apps/webapp && npm install\"",
+    "preinstall": "npm install -g lerna rimraf concurrently && npm run clean",
+    "postinstall": "lerna bootstrap"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "angular 4",
+    "loopback",
+    "fireloop",
+    "realtime",
+    "mean",
+    "full stack",
+    "full-stack",
+    "admin",
+    "module",
+    "mongo",
+    "mongodb",
+    "node",
+    "express",
+    "static",
+    "lerna"
+  ],
+  "author": "Brannon N. Darby II (logic) <bdarby86@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}

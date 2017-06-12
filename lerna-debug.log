@@ -1,0 +1,78 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], sort: true, concurrency: 4 }
+2 verbose rootPath D:\fire-admin
+3 info version 2.0.0-rc.5
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync D:\fire-admin\VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 warn No tags found!
+14 info Comparing with initial commit.
+15 verbose updated api-server
+16 verbose updated webapp
+17 verbose updated @ngx-fire/admin-auth
+18 verbose updated @ngx-fire/admin-ui
+19 silly collectDependents
+20 silly isPackageDependentOf api-server api-server
+21 silly isPackageDependentOf api-server webapp
+22 silly isPackageDependentOf api-server @ngx-fire/admin-auth
+23 silly isPackageDependentOf api-server @ngx-fire/admin-ui
+24 silly isPackageDependentOf webapp api-server
+25 silly isPackageDependentOf @ngx-fire/admin-ui api-server
+26 silly isPackageDependentOf webapp webapp
+27 silly isPackageDependentOf @ngx-fire/admin-ui webapp
+28 silly isPackageDependentOf webapp @ngx-fire/admin-auth
+29 silly isPackageDependentOf @ngx-fire/admin-ui @ngx-fire/admin-auth
+30 silly isPackageDependentOf webapp @ngx-fire/admin-ui
+31 verbose dependent webapp depends on @ngx-fire/admin-ui
+32 silly isPackageDependentOf @ngx-fire/admin-auth api-server
+33 silly isPackageDependentOf @ngx-fire/admin-auth webapp
+34 silly isPackageDependentOf @ngx-fire/admin-auth @ngx-fire/admin-auth
+35 silly isPackageDependentOf @ngx-fire/admin-auth @ngx-fire/admin-ui
+36 silly isPackageDependentOf @ngx-fire/admin-ui api-server
+37 silly isPackageDependentOf @ngx-fire/admin-ui webapp
+38 silly isPackageDependentOf @ngx-fire/admin-ui @ngx-fire/admin-auth
+39 silly isPackageDependentOf @ngx-fire/admin-ui @ngx-fire/admin-ui
+40 silly collectUpdates
+41 verbose has filtered update api-server
+42 verbose has filtered update webapp
+43 verbose has filtered update @ngx-fire/admin-auth
+44 verbose has filtered update @ngx-fire/admin-ui
+45 silly initialize success
+46 silly execute attempt
+47 silly isDetachedHead
+48 silly getCurrentBranch
+49 error execute Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+49 error execute Use '--' to separate paths from revisions, like this:
+49 error execute 'git <command> [<revision>...] -- [<file>...]'
+49 error execute
+49 error execute     at Function.module.exports.sync (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\node_modules\execa\index.js:277:26)
+49 error execute     at Function.execSync (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+49 error execute     at Function.getCurrentBranch (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\GitUtilities.js:183:59)
+49 error execute     at Function.isDetachedHead (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\GitUtilities.js:37:37)
+49 error execute     at PublishCommand.execute (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\commands\PublishCommand.js:235:55)
+49 error execute     at PublishCommand._attempt (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:265:21)
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:252:15
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:274:13
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\commands\PublishCommand.js:475:11
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\PromptUtilities.js:38:9
+49 error execute  callback with error
+49 error execute  Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+49 error execute Use '--' to separate paths from revisions, like this:
+49 error execute 'git <command> [<revision>...] -- [<file>...]'
+49 error execute
+49 error execute     at Function.module.exports.sync (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\node_modules\execa\index.js:277:26)
+49 error execute     at Function.execSync (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+49 error execute     at Function.getCurrentBranch (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\GitUtilities.js:183:59)
+49 error execute     at Function.isDetachedHead (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\GitUtilities.js:37:37)
+49 error execute     at PublishCommand.execute (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\commands\PublishCommand.js:235:55)
+49 error execute     at PublishCommand._attempt (C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:265:21)
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:252:15
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\Command.js:274:13
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\commands\PublishCommand.js:475:11
+49 error execute     at C:\Users\bdarby\AppData\Roaming\nvm\v8.0.0\node_modules\lerna\lib\PromptUtilities.js:38:9
