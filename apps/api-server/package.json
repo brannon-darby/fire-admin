@@ -1,6 +1,6 @@
 {
   "name": "api-server",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "server/server.js",
   "scripts": {
     "dev": "set DEBUG=loopback:security:* && nodemon .",
@@ -9,6 +9,7 @@
     "posttest": "npm run lint && nsp check",
     "test": "set NODE_ENV=testing && npm run start"
   },
+  "private": true,
   "dependencies": {
     "@mean-expert/boot-script": "^1.0.0",
     "@mean-expert/loopback-component-realtime": "^1.0.0-rc.8.7",
