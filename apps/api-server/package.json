@@ -1,6 +1,6 @@
 {
   "name": "api-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "server/server.js",
   "scripts": {
     "dev": "set DEBUG=loopback:security:* && nodemon .",
